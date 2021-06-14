@@ -28,87 +28,83 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid main">
       <!-- Timeblocks go here -->
-      <div class="form-group row">
-        <label for="inputlg col-2" class="time">09 AM</label>
+      <form id="time-block" class="form-group row">
+        <label for="inputlg col-2" data-time="09" class="time">09 AM</label>
         <input
           class="form-control form-control-lg col-8"
-          id="inputlg"
+          type="text"
+          id = "plan"
+          name= "plan"
+        />
+        <button type="submit" class="save-btn" value="save" id="9">save</button>
+      </form>
+      <form id = "time-block" class="form-group row">
+        <label for="inputlg col-2" data-time="10" class="time">10 AM</label>
+        <input
+          class="form-control form-control-lg col-8"
+          type="text"
+          id = "plan"
+          name = "plan"
+        />
+        <button type="submit" class="save-btn" value="save" id="10">save</button>
+      </form>
+      <form id="time-block" class="form-group row">
+        <label for="inputlg col-2" data-time = "11" class="time">11 AM</label>
+        <input
+          class="plan form-control form-control-lg col-8"
+          type="text"
+          name= "plan"
+        />
+        <button type="submit" class="save-btn" value="save" id="11">save</button>
+      </form>
+      <div class="form-group row">
+        <label for="inputlg col-2" data-time = "12" class="time">12 PM</label>
+        <input
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save" id="12">save</button>
       </div>
       <div class="form-group row">
-        <label for="inputlg col-2" class="time">10 AM</label>
+        <label for="inputlg col-2" data-time = "13" class="time">01 PM</label>
         <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
-      </div>
-      <div class="form-group row">
-        <label for="inputlg col-2" class="time">11 AM</label>
-        <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
-          type="text"
-        />
-        <button class="save-btn p-2 col-2">SAVE</button>
-      </div>
-      <div class="form-group row">
-        <label for="inputlg col-2" class="time">12 PM</label>
-        <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
-          type="text"
-        />
-        <button class="save-btn p-2 col-2">SAVE</button>
-      </div>
-      <div class="form-group row">
-        <label for="inputlg col-2" class="time">01 PM</label>
-        <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
-          type="text"
-        />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save" id="13">save</button>
       </div>      <div class="form-group row">
-        <label for="inputlg col-2" class="time">02 PM</label>
+        <label for="inputlg col-2" data-time = "14" class="time">02 PM</label>
         <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save"id="14">save</button>
       </div>
       <div class="form-group row">
-        <label for="inputlg col-2" class="time">03 PM</label>
+        <label for="inputlg col-2" data-time = "15" class="time">03 PM</label>
         <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save"id="15">save</button>
       </div>
       <div class="form-group row">
-        <label for="inputlg col-2" class="time">04 PM</label>
+        <label for="inputlg col-2" data-time = "16" class="time">04 PM</label>
         <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save"id="16">save</button>
       </div>
       <div class="form-group row">
-        <label for="inputlg col-2" class="time">09 PM</label>
+        <label for="inputlg col-2" data-time = "17" class="time">05 PM</label>
         <input
-          class="form-control form-control-lg col-8"
-          id="inputlg"
+          class="plan form-control form-control-lg col-8"
           type="text"
         />
-        <button class="save-btn p-2 col-2">SAVE</button>
+        <button type="submit" class="save-btn" value="save"id="17">save</button>
       </div>
     </div>
 
