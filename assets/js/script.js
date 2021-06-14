@@ -1,9 +1,7 @@
 var savedPlan = JSON.parse(localStorage.getItem("savedPlan")) || {};
 var today = moment();
-var time = $(".time").html();
 var planInput = $('input#plan').val();
 var mainEl = $(".main");
-var timeBlock = document.querySelectorAll("#time-block");
 var currentTime = today.format("H");
 var times = document.querySelectorAll(".time");
 
@@ -44,11 +42,11 @@ function init() {
 
 function saveDay(event) {
   event.preventDefault()
-  var theTime = $(this)[0].id;
+  var time = $(this)[0].id;
   var saveBtn = $(event.target);
   var plan = saveBtn.siblings("input").val();
 
-  savedPlan[theTime] = plan
+  savedPlan[time] = plan
   localStorage.setItem("savedPlan", JSON.stringify(savedPlan));
 }
 
